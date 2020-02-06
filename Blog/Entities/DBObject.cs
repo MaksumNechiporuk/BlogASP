@@ -10,7 +10,6 @@ namespace Blog.Entities
     {
         public static void Initial(DBContent content)
         {
-            Debug.WriteLine(DateTime.Now.Date);
             if (!content.Blog.Any())
             {
                 content.AddRange(
@@ -47,6 +46,15 @@ namespace Blog.Entities
                              PrewText = "Discussion forums have become an inseparable component of our communication realities. When we join online classrooms, we spend most of our time posting our stories and discussing the most important subjects and topics with instructors and peers. Definitely, online class discussion board provides perfect opportunities for online interactions and learning, so you need to know",
                              Img = "/img/Tips-for-Creating-the-Perfect-Discussion-Post.jpg",
                              FullText = "Discussion forums have become an inseparable component of our communication realities. When we join online classrooms, we spend most of our time posting our stories and discussing the most important subjects and topics with instructors and peers. Definitely, online class discussion board provides perfect opportunities for online interactions and learning, so you need to know how to write a discussion board post. When you join an online course, you also expect that your discussion posts will be memorable and impressive. You want to stand out among your peers. You want to be popular. You want to receive positive feedback from your classmates. You also want to earn the highest grades for your discussion posts. Every post is graded, based on its quality and contents. Therefore, you must know how to produce a brilliant discussion post for your online classes. Now you need to learn how to write a discussion board post, and your discussion posts will boost your popularity among classmates. We have created this article to help you improve your academic results. Follow our recommendations, and you will see how your discussion posts impress your teacher and improve your image and reputation in the eyes of your classmates.",
+                             Author = "Banana",
+                             Date = DateTime.Now.Date
+                         },
+                         new tblBlog
+                         {
+                             Name = "100 INTERESTING DEFINITION ESSAY TOPICS FOR COLLEGE STUDENTS",
+                             PrewText = "What is a determining factor when it goes to writing a successful definition essay? Boring essay topics tend to bore both students and teachers, thus the defining successful factor of your essay is an interesting definition essay topic. You should carefully consider every possible cool definition essay topic idea in order to pick the best",
+                             Img = "/img/100-interesting-definition-essay-topics.jpg",
+                             FullText = "What is a determining factor when it goes to writing a successful definition essay? Boring essay topics tend to bore both students and teachers, thus the defining successful factor of your essay is an interesting definition essay topic. You should carefully consider every possible cool definition essay topic idea in order to pick the best one. This way you will increase your chances for a higher grade significantly. The possibility you may find the search of the most suitable topic for definition essay assignment difficult is rather high since the subjects vary greatly. You need to start with the suggested checklist and stick to the one topic:The suggested list of topics for a definition essay in different subjects was composed especially for you to make your college essays remarkable!",
                              Author = "Banana",
                              Date = DateTime.Now.Date
                          }

@@ -11,15 +11,14 @@
                         <div class="blog-title">
                             <h4><a href="#">@item.Name</a></h4>
                             <div class="meta">
-
                                 @item.Date
-
                             </div>
                         </div>
                         <p>
                             @item.PrewText
                         </p>
-                        <a href="#" class="box_btn">read more</a>
+                   
+                        <a class="box_btn"  asp-controller="Blog" asp-action="Post" asp-route-id="@item.Id" >read more</a>
                     </div>
                 </div>
             </div>

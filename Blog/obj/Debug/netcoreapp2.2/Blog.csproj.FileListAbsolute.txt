@@ -31,3 +31,4 @@ D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Blog.pdb
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Blog.csproj.CopyComplete
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Home\Discounts.g.cshtml.cs
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Blog\Blog.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Blog\Post.g.cshtml.cs

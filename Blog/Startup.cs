@@ -64,6 +64,9 @@ namespace Blog
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(
+                    name: "Getpost",
+                    template: "Blog/Post/{id?}", defaults: new { Controller = "Blog", action = "Post" });
             });
             using (var scope = app.ApplicationServices.CreateScope())
             {

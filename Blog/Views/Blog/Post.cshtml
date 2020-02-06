@@ -1,0 +1,28 @@
+﻿<div class="container">
+    <div class="well">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row hidden-md hidden-lg">
+                
+                </div>
+
+                <div class="pull-left col-md-4 col-xs-12 thumb-contenido">
+                    <img class="center-block img-responsive"
+                         src="@Model.Img" />
+                </div>
+                <div class="">
+                    <h1 class="hidden-xs hidden-sm">
+                        @Model.Name
+                    </h1>
+                    <hr />
+                    <small>@Model.Date</small><br />
+                    <small><strong>@Model.Author</strong></small>
+                    <hr />
+                    <p class="text-justify">
+                        @Model.FullText
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

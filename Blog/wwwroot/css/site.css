@@ -112,3 +112,8 @@ a.box_btn {
         left: 0;
         z-index: -1;
     }
+.thumb-contenido {
+    margin-bottom: 1%;
+    margin-left: 0px;
+    padding-left: 0px;
+}
