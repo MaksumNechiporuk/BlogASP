@@ -17,41 +17,58 @@
     </environment>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800,900%7cRaleway:300,400,500,600,700"
           rel="stylesheet" />
-
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
-          rel="stylesheet"
-          id="bootstrap-css" />
+    <link rel="stylesheet" href="~/css/header/header.css" />
 
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Blog</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Brand -->
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" >Read<i>it</i>.</a>
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                      
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ABOUT">About us</a>
+                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="ABOUT">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Blog" asp-action="Blog">Blog</a>
+                            <a class="nav-link" asp-area="" asp-controller="Blog" asp-action="Blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Discounts">Discounts</a>
+                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Discounts">Discounts</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <div class="banner">
+            <div class="container">
+                <div class="banner-text">
+                    <div class="col-md-12 ftco-animate">
+                        <h2 class="subheading">Hello! Welcome to</h2>
+                        <h1 class="banner-heading">Readit blog</h1>
+                        
+                    </div>
+                  
+                </div>
+            </div>
+        </div>     
     </header>
     <div class="container">
         <partial name="_CookieConsentPartial" />

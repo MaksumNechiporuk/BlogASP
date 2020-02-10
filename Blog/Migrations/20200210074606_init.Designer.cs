@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Blog.Migrations
 {
     [DbContext(typeof(DBContent))]
-    [Migration("20200205190727_add Date")]
-    partial class addDate
+    [Migration("20200210074606_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,17 +27,23 @@ namespace Blog.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Author");
+                    b.Property<string>("Author")
+                        .IsRequired()
+                        .HasMaxLength(30);
 
                     b.Property<DateTime>("Date");
 
-                    b.Property<string>("FullText");
+                    b.Property<string>("FullText")
+                        .IsRequired();
 
                     b.Property<string>("Img");
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100);
 
-                    b.Property<string>("PrewText");
+                    b.Property<string>("PrewText")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
