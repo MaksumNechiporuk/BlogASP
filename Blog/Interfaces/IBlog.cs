@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Blog.Interfaces
 {
-    public interface IBlog
+    public interface IBlogRepository
     {
-        IEnumerable<tblBlog> Blogs { get; }
+        BlogModel GetPostById(int id);
+        IEnumerable<BlogModel> GetAllPosts();
+        BlogModel CreatePost(BlogModel post);
+        BlogModel UpdatePost(BlogModel newPost);
+        BlogModel DeletePost(int Id);
     }
 }

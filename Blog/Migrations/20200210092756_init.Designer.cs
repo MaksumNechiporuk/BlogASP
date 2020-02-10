@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Blog.Migrations
 {
     [DbContext(typeof(DBContent))]
-    [Migration("20200210074606_init")]
+    [Migration("20200210092756_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,7 +21,7 @@ namespace Blog.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Blog.Entities.tblBlog", b =>
+            modelBuilder.Entity("Blog.Entities.BlogModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

@@ -13,7 +13,7 @@ namespace Blog.Entities
             if (!content.Blog.Any())
             {
                 content.AddRange(
-                   new tblBlog
+                   new BlogModel
                    {
                        Name= "Resume vs Cover Letter : Main Differences Between",
                        PrewText= "Do you know that a resume and a cover letter actually differ? Even though both of these documents are essential when applying for a job, it is critical that you know how to differentiate them in order to write them for the right purpose. Resume vs cover letter should be properly defined so that you",
@@ -22,7 +22,7 @@ namespace Blog.Entities
                        Author="Banana",
                        Date=DateTime.Now.Date
                    },
-                     new tblBlog
+                     new BlogModel
                      {
                          Name = "60 BEST IDEAS ON NURSING RESEARCH PAPER TOPICS",
                          PrewText = "Students at medical universities should work even more than other students. They deal with human health and have to write their pieces of research on complicated issues. However, there is a separate group of medical staff – nurses. Usually, they get their degree at college or universities. Besides, often, they should combine their study and",
@@ -31,7 +31,7 @@ namespace Blog.Entities
                          Author = "Banana",
                          Date = DateTime.Now.Date
                      },
-                       new tblBlog
+                       new BlogModel
                        {
                            Name = "TYPES OF EXAM QUESTIONS",
                            PrewText = "Since the examination is the most common tool, which is used to assess the students’ knowledge, various and sundry examination questions have been created through the history of education. This article not only gives a brief description of six widespread types of examination questions, but also suggests handy tips on implementing each of them. Exam",
@@ -40,7 +40,7 @@ namespace Blog.Entities
                            Author = "Banana",
                            Date = DateTime.Now.Date
                        },
-                         new tblBlog
+                         new BlogModel
                          {
                              Name = "TIPS FOR CREATING PERFECT DISCUSSION BOARD POST FOR YOUR ONLINE CLASSES",
                              PrewText = "Discussion forums have become an inseparable component of our communication realities. When we join online classrooms, we spend most of our time posting our stories and discussing the most important subjects and topics with instructors and peers. Definitely, online class discussion board provides perfect opportunities for online interactions and learning, so you need to know",
@@ -49,7 +49,7 @@ namespace Blog.Entities
                              Author = "Banana",
                              Date = DateTime.Now.Date
                          },
-                         new tblBlog
+                         new BlogModel
                          {
                              Name = "100 INTERESTING DEFINITION ESSAY TOPICS FOR COLLEGE STUDENTS",
                              PrewText = "What is a determining factor when it goes to writing a successful definition essay? Boring essay topics tend to bore both students and teachers, thus the defining successful factor of your essay is an interesting definition essay topic. You should carefully consider every possible cool definition essay topic idea in order to pick the best",

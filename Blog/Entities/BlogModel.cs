@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Blog.Entities
 {
 
-    public class tblBlog
+    public class BlogModel
     {
         public int Id { get; set; }
         [Required]

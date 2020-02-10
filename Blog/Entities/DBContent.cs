@@ -12,7 +12,7 @@ namespace Blog.Entities
         {
 
         }
-        public DbSet<tblBlog> Blog { get; set; }
+        public DbSet<BlogModel> Blog { get; set; }
 
     }
 }
