@@ -48,13 +48,13 @@ namespace Blog.Repository
 
         public BlogModel UpdatePost(BlogModel newPost)
         {
-            var post = context.Blog.Find(newPost.Id);
-            //post.Img=newPost.Img;
-            post.Name = newPost.Name;
-            post.PrewText = newPost.PrewText;
-            post.FullText = newPost.FullText;
-            post.Author = newPost.Author;
-            //context.Update(newPost);
+            //var post = context.Blog.Find(newPost.Id);
+            ////post.Img=newPost.Img;
+            //post.Name = newPost.Name;
+            //post.PrewText = newPost.PrewText;
+            //post.FullText = newPost.FullText;
+            //post.Author = newPost.Author;
+            context.Update(newPost);
             context.SaveChanges();
             return newPost;
         }
