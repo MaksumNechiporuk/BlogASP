@@ -9,6 +9,7 @@ using Blog.ViewModel;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing;
 
 namespace Blog.Controllers
 {
@@ -97,9 +98,8 @@ namespace Blog.Controllers
                     FullText = new_post.FullText,
                     Img = Path.Combine("/","img",uniqFileName)
                 };
-
                 _blogRepository.CreatePost(post);
-                return Redirect($"~/Blog/Post/{post.Id}");
+                return RedirectToRoute( new { controller = "Blog", action = "Post", Id=post.Id });
             }
             return View();
         }
