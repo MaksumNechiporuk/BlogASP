@@ -1,0 +1,56 @@
+﻿@model int
+@{
+    var statusCode = Model;
+    var statusmessage = "";
+    switch (statusCode)
+    {
+        case 400:
+            statusmessage = "Bad request: The request cannot be fulfilled due to bad syntax";
+            break;
+        case 403:
+            statusmessage = "Forbidden";
+            break;
+        case 404:
+            statusmessage = "Page not found";
+            break;
+        case 408:
+            statusmessage = "The server timed out waiting for the request";
+            break;
+        case 500:
+            statusmessage = "Internal Server Error - server was unable to finish processing the request";
+            break;
+        default:
+            statusmessage = "That’s odd... Something we didn't expect happened";
+            break;
+    }
+}
+<div class="error-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="error-text">
+                    <h1 class="error"> Error @Model </h1>
+                    <div class="im-sheep">
+                        <div class="top">
+                            <div class="body"></div>
+                            <div class="head">
+                                <div class="im-eye one"></div>
+                                <div class="im-eye two"></div>
+                                <div class="im-ear one"></div>
+                                <div class="im-ear two"></div>
+                            </div>
+                        </div>
+                        <div class="im-legs">
+                            <div class="im-leg"></div>
+                            <div class="im-leg"></div>
+                            <div class="im-leg"></div>
+                            <div class="im-leg"></div>
+                        </div>
+                    </div>
+                    <h4>@statusmessage</h4>
+                    <a href='javascript:history.go(-1)' class="btn btn-primary btn-round">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

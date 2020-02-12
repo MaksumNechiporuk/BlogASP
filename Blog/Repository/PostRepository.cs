@@ -3,6 +3,7 @@ using Blog.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -27,7 +28,10 @@ namespace Blog.Repository
         public BlogModel DeletePost(int Id)
         {
            var post= context.Blog.Find(Id);
-            if(post!=null)
+
+
+      
+            if (post!=null)
             {
             context.Blog.Remove(post);
             context.SaveChanges();
@@ -37,7 +41,9 @@ namespace Blog.Repository
 
         public IEnumerable<BlogModel> GetAllPosts()
         {
-            return context.Blog;
+            var list = context.Blog.ToList();
+            list.Reverse();
+            return list;
         }
 
         public BlogModel GetPostById(int id)
@@ -48,13 +54,8 @@ namespace Blog.Repository
 
         public BlogModel UpdatePost(BlogModel newPost)
         {
-            //var post = context.Blog.Find(newPost.Id);
-            ////post.Img=newPost.Img;
-            //post.Name = newPost.Name;
-            //post.PrewText = newPost.PrewText;
-            //post.FullText = newPost.FullText;
-            //post.Author = newPost.Author;
-            context.Update(newPost);
+            var post = context.Blog.Attach(newPost);
+            post.State = EntityState.Modified;
             context.SaveChanges();
             return newPost;
         }

@@ -33,4 +33,5 @@ D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Home\Discou
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Blog\Blog.g.cshtml.cs
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Blog\Post.g.cshtml.cs
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Admin\CreatePost.g.cshtml.cs
-D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Admin\EditPost.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Blog\Edit.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\StatusCode\Index.g.cshtml.cs

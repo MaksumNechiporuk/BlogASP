@@ -5,7 +5,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="single-blog">
                     <div class="blog-img">
-                        <img src="@item.Img" alt="blog image" />
+                        <img src="~/img/@item.Img" alt="blog image" />
                     </div>
                     <div class="blog-content">
                         <div class="blog-title">
@@ -18,7 +18,7 @@
                             @item.PrewText
                         </p>
                         <a class="btn btn-primary" asp-controller="Blog" asp-action="Post" asp-route-id="@item.Id">Read more</a>
-                        <a class="btn-warning btn" asp-controller="Admin" asp-action="EditPost" asp-route-id="@item.Id">Edit</a>
+                        <a class="btn-warning btn" asp-controller="Blog" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
                         <a class="btn btn-danger" asp-controller="Blog" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                     </div>
                 </div>
