@@ -40,7 +40,7 @@ namespace Blog.Controllers
         public IActionResult Delete(int id)
         {
             var post = _postRepository.GetPostById(id);
-            if (post.Img != null)
+            if (post.Img != null&&post.Img != "news.svg")
             {
                
                 string filePath = Path.Combine(hostingEnvironment.WebRootPath,"img", post.Img);
