@@ -36,9 +36,9 @@ namespace Blog.Controllers
             ViewBag.Title = "Blog";          
             return View(_postRepository.GetAllPosts());
         }
+
         public IActionResult Delete(int id)
         {
-            _postRepository.DeletePost(id);
             var post = _postRepository.GetPostById(id);
             if (post.Img != null)
             {
@@ -46,6 +46,7 @@ namespace Blog.Controllers
                 string filePath = Path.Combine(hostingEnvironment.WebRootPath,"img", post.Img);
                 System.IO.File.Delete(filePath);
             }
+            _postRepository.DeletePost(id);
             return RedirectToAction("Blog");
 
         }
