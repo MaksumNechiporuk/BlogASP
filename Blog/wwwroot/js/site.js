@@ -23,4 +23,22 @@ $(".dropdown-toggle").on("click", function () {
                     var fileName = $(this).val().split("\\").pop();
                     $(this).next('.custom-file-label').html(fileName);
                 });
-            });
+});
+
+$(".search").on("click", function () {   
+        //const URL = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=93395f34a1bd41ea945fea1ef380ff4c`;
+        //await fetch(URL, {
+        //    method: "GET"
+        //})
+        //    .then(response => {
+        //        return response.json();
+        //    })
+        //    .then(data => {
+        //        callback(data);
+        //        console.log(URL);
+        //    })
+        //    .catch(err => {
+        //        console.log("Catch => ", err);
+        //    });
+    
+});

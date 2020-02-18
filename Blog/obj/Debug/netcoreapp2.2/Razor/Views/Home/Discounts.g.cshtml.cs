@@ -28,8 +28,18 @@ using Blog.Entities;
 
 #line default
 #line hidden
+#line 4 "D:\Study\ASP .NET Core\Blog\Blog\Views\_ViewImports.cshtml"
+using Blog.ViewModel;
+
+#line default
+#line hidden
+#line 5 "D:\Study\ASP .NET Core\Blog\Blog\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"46afab97f161c809c48e115dc9aa729a00276e1b", @"/Views/Home/Discounts.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8106d4ae10633afc2bb4df4d735dee5b12f0cc0e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ea2277786078359b4037ecd2629e4ad0a2ff9efc", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Discounts : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

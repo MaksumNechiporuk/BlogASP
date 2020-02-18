@@ -28,8 +28,18 @@ using Blog.Entities;
 
 #line default
 #line hidden
+#line 4 "D:\Study\ASP .NET Core\Blog\Blog\Views\_ViewImports.cshtml"
+using Blog.ViewModel;
+
+#line default
+#line hidden
+#line 5 "D:\Study\ASP .NET Core\Blog\Blog\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"800517a97e1045cc7be67276a57ffc1e77361490", @"/Views/Blog/Post.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8106d4ae10633afc2bb4df4d735dee5b12f0cc0e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ea2277786078359b4037ecd2629e4ad0a2ff9efc", @"/Views/_ViewImports.cshtml")]
     public class Views_Blog_Post : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("center-block img-responsive"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -68,7 +78,7 @@ using Blog.Entities;
                     ");
             EndContext();
             BeginContext(308, 92, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "800517a97e1045cc7be67276a57ffc1e773614903919", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "800517a97e1045cc7be67276a57ffc1e773614904182", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

@@ -35,3 +35,7 @@ D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Blog\Post.g
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Admin\CreatePost.g.cshtml.cs
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Blog\Edit.g.cshtml.cs
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\StatusCode\Index.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Shared\PostNotFound.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Shared\NotFound.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\bin\Debug\netcoreapp2.2\nlog.config
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs

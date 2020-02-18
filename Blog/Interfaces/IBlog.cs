@@ -13,5 +13,7 @@ namespace Blog.Interfaces
         BlogModel CreatePost(BlogModel post);
         BlogModel UpdatePost(BlogModel newPost);
         BlogModel DeletePost(int Id);
+        List<BlogModel> GetPostByName(string Name);
+
     }
 }

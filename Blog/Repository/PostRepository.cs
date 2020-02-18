@@ -52,6 +52,13 @@ namespace Blog.Repository
 
         }
 
+        public List<BlogModel> GetPostByName(string Name)
+        {
+          var list=  context.Blog.Where(item => item.Name.Contains(Name) ).ToList();
+            return list;
+
+        }
+
         public BlogModel UpdatePost(BlogModel newPost)
         {
             var post = context.Blog.Attach(newPost);

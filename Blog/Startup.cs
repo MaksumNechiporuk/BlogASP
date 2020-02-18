@@ -8,6 +8,7 @@ using Blog.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -41,10 +42,14 @@ namespace Blog
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-           
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            {
+                options.Password.RequiredLength = 5;
+                options.Password.RequiredUniqueChars = 2;
+            })
+                .AddEntityFrameworkStores<DBContent>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
-
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
@@ -57,6 +62,8 @@ namespace Blog
             app.UseStatusCodePagesWithReExecute("/StatusCode/{0}");
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseAuthentication();
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
@@ -65,6 +72,12 @@ namespace Blog
                 routes.MapRoute(
                     name: "Getpost",
                     template: "Blog/Post/{id?}", defaults: new { Controller = "Blog", action = "Post" });
+            });         
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
             using (var scope = app.ApplicationServices.CreateScope())
             {

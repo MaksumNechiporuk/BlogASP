@@ -11,6 +11,7 @@ using Blog.ViewModel;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Logging;
 
 namespace Blog.Controllers
 {
@@ -18,25 +19,47 @@ namespace Blog.Controllers
     {
         private readonly IBlogRepository _postRepository;
         private IHostingEnvironment hostingEnvironment;
-
-        public BlogController(IBlogRepository postRepository,IHostingEnvironment hostingEnvironment)
+        private readonly ILogger logger;
+        public BlogController(IBlogRepository postRepository,IHostingEnvironment hostingEnvironment, ILogger<BlogController> logger)
         {
             _postRepository = postRepository;
             this.hostingEnvironment = hostingEnvironment;
+            this.logger = logger;
 
         }
         [Route("Blog/Post/{id}")]
         public IActionResult Post(int id)
         {
             ViewBag.Title = "Post";
-            return View(_postRepository.GetPostById(id));
+            logger.LogTrace("Trace Log");
+            logger.LogDebug("Debug Log");
+            logger.LogInformation("Information Log");
+            logger.LogWarning("Warning Log");
+            logger.LogError("Error Log");
+            logger.LogCritical("Critical Log");
+            var post = _postRepository.GetPostById(id);
+            if(post==null)
+            {
+                Response.StatusCode = 404;
+                return View("PostNotFound", id);
+            }
+            return View(post);
         }
         public IActionResult Blog()
         {
             ViewBag.Title = "Blog";          
             return View(_postRepository.GetAllPosts());
         }
-
+        [HttpPost]
+        public IActionResult Blog(PostSearchViewModel post)
+        {
+            ViewBag.Title = "Blog";
+            var list = _postRepository.GetPostByName(post.Name);
+            if(list.Count>0)
+            return View(list);
+            else
+            return new StatusCodeResult(404);
+        }
         public IActionResult Delete(int id)
         {
             var post = _postRepository.GetPostById(id);
@@ -66,6 +89,7 @@ namespace Blog.Controllers
             };
             return View(postEditViewModel);
         }
+      
         [HttpPost]
         public IActionResult Edit(PostEditViewModel model)
         {
@@ -77,7 +101,6 @@ namespace Blog.Controllers
                 post.Name = model.Name;
                 post.PrewText = model.PrewText;
                 post.FullText = model.FullText;
-
                 if (model.Img != null)
                 {
                     if (model.ExistImgPath != null)
