@@ -128,3 +128,35 @@ ALTER TABLE [AspNetUsers] ADD [Street] nvarchar(max) NULL;
 2020-02-24 09:13:29.4910|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
 INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
 VALUES (N'20200224071302_add value', N'2.2.6-servicing-10079');
+2020-02-24 09:49:02.2124|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTOVNT0PAP5", Request id "0HLTOVNT0PAP5:00000005": An unhandled exception was thrown by the application.
+2020-02-24 09:49:55.9982|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTOVOFVB0EM", Request id "0HLTOVOFVB0EM:00000005": An unhandled exception was thrown by the application.
+2020-02-24 09:53:26.0569|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTOVQF6NQOK", Request id "0HLTOVQF6NQOK:00000003": An unhandled exception was thrown by the application.
+2020-02-24 09:53:39.4567|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTOVQF6NQOK", Request id "0HLTOVQF6NQOK:00000004": An unhandled exception was thrown by the application.
+2020-02-24 10:14:28.8433|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTP066TEF5G", Request id "0HLTP066TEF5G:00000002": An unhandled exception was thrown by the application.
+2020-02-24 10:14:55.7038|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTP06F5A95B", Request id "0HLTP06F5A95B:00000003": An unhandled exception was thrown by the application.
+2020-02-24 10:15:34.4692|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTP06QG0ULQ", Request id "0HLTP06QG0ULQ:00000003": An unhandled exception was thrown by the application.
+2020-02-24 10:46:07.6138|TRACE|Blog.Controllers.BlogController|Trace Log
+2020-02-24 10:46:07.6590|DEBUG|Blog.Controllers.BlogController|Debug Log
+2020-02-24 10:46:07.6590|INFO|Blog.Controllers.BlogController|Information Log
+2020-02-24 10:46:07.6590|WARN|Blog.Controllers.BlogController|Warning Log
+2020-02-24 10:46:07.6590|ERROR|Blog.Controllers.BlogController|Error Log
+2020-02-24 10:46:07.6590|FATAL|Blog.Controllers.BlogController|Critical Log
+2020-02-24 10:46:11.7602|TRACE|Blog.Controllers.BlogController|Trace Log
+2020-02-24 10:46:11.7602|DEBUG|Blog.Controllers.BlogController|Debug Log
+2020-02-24 10:46:11.7680|INFO|Blog.Controllers.BlogController|Information Log
+2020-02-24 10:46:11.7680|WARN|Blog.Controllers.BlogController|Warning Log
+2020-02-24 10:46:11.7680|ERROR|Blog.Controllers.BlogController|Error Log
+2020-02-24 10:46:11.7680|FATAL|Blog.Controllers.BlogController|Critical Log
+2020-02-24 10:57:07.7987|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administrator/DeleteRole/156cdda9-da3b-40aa-8fe1-c2204eeb167e
+2020-02-24 10:57:17.4189|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administrator/DeleteRole/156cdda9-da3b-40aa-8fe1-c2204eeb167e
+2020-02-24 10:57:54.0222|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administrator/DeleteRole/156cdda9-da3b-40aa-8fe1-c2204eeb167e
+2020-02-24 10:58:47.8417|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administrator/DeleteRole/156cdda9-da3b-40aa-8fe1-c2204eeb167e
+2020-02-24 11:00:32.1665|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administrator/DeleteRole/156cdda9-da3b-40aa-8fe1-c2204eeb167e
+2020-02-24 11:03:10.5541|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administrator/DeleteRole/156cdda9-da3b-40aa-8fe1-c2204eeb167e
+2020-02-24 11:03:22.2483|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administrator/DeleteRole/156cdda9-da3b-40aa-8fe1-c2204eeb167e
+2020-02-24 11:05:17.2880|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administrator/DeleteRole/156cdda9-da3b-40aa-8fe1-c2204eeb167e
+2020-02-24 11:06:01.0362|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administrator/DeleteRole/156cdda9-da3b-40aa-8fe1-c2204eeb167e
+2020-02-24 11:08:41.0974|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administrator/DeleteRole/156cdda9-da3b-40aa-8fe1-c2204eeb167e
+2020-02-24 11:08:49.7122|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administrator/DeleteRole/156cdda9-da3b-40aa-8fe1-c2204eeb167e
+2020-02-24 11:09:57.7506|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administrator/DeleteRole/156cdda9-da3b-40aa-8fe1-c2204eeb167e
+2020-02-24 11:10:25.3218|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administrator/DeleteRole/156cdda9-da3b-40aa-8fe1-c2204eeb167e

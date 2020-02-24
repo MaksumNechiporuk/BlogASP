@@ -50,6 +50,8 @@ namespace Blog.Controllers
         [AllowAnonymous]
         public IActionResult Blog()
         {
+            ViewBag.Message = "Form submitted.";
+
             ViewBag.Title = "Blog";          
             return View(_postRepository.GetAllPosts());
         }

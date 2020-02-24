@@ -49,7 +49,9 @@
                         @if (SignInManager.IsSignedIn(User))
                         {
                             <a class="btn-warning btn" asp-controller="Blog" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
-                            <a class="btn btn-danger" asp-controller="Blog" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+
+
+                            <a class="btn btn-danger" asp-controller="Blog" asp-action="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure?')">Delete</a>
                         }
 
                     </div>

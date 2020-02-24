@@ -40,3 +40,6 @@ D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Shared\NotF
 D:\Study\ASP .NET Core\Blog\Blog\bin\Debug\netcoreapp2.2\nlog.config
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Administrator\CreateRole.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Administrator\EditRole.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Administrator\ListRoles.g.cshtml.cs
