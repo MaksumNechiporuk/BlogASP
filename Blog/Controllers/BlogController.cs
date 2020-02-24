@@ -8,6 +8,7 @@ using Blog.Interfaces;
 using Blog.Models;
 using Blog.Repository;
 using Blog.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
@@ -28,6 +29,7 @@ namespace Blog.Controllers
 
         }
         [Route("Blog/Post/{id}")]
+        [AllowAnonymous]
         public IActionResult Post(int id)
         {
             ViewBag.Title = "Post";
@@ -45,12 +47,14 @@ namespace Blog.Controllers
             }
             return View(post);
         }
+        [AllowAnonymous]
         public IActionResult Blog()
         {
             ViewBag.Title = "Blog";          
             return View(_postRepository.GetAllPosts());
         }
         [HttpPost]
+        [AllowAnonymous]
         public IActionResult Blog(PostSearchViewModel post)
         {
             ViewBag.Title = "Blog";

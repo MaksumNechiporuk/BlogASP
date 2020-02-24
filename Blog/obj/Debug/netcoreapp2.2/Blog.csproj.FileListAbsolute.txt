@@ -39,3 +39,4 @@ D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Post
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Shared\NotFound.g.cshtml.cs
 D:\Study\ASP .NET Core\Blog\Blog\bin\Debug\netcoreapp2.2\nlog.config
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs

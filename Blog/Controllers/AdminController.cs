@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Blog.Entities;
 using Blog.Interfaces;
 using Blog.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -29,7 +30,6 @@ namespace Blog.Controllers
         {
             return View();
         }
-
         [HttpPost]
         public IActionResult CreatePost(PostCreateViewModel new_post)
         {

@@ -1,4 +1,4 @@
-﻿@inject SignInManager<IdentityUser> SignInManager
+﻿@inject SignInManager<AppUser> SignInManager
 <!DOCTYPE html>
 <html>
 <head>
@@ -57,11 +57,12 @@
                         <li class="nav-item">
                             <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Discounts">Discounts</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link " asp-area="" asp-controller="Admin" asp-action="CreatePost">Admin panel</a>
-                        </li>
+
                         @if (SignInManager.IsSignedIn(User))
                         {
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="Admin" asp-action="CreatePost">Admin panel</a>
+                            </li>
                             <li class="nav-item">
                                 <form method="post" asp-controller="Account" asp-action="logout">
                                     <button type="submit" style="width:auto"
@@ -81,7 +82,7 @@
                                     Login
                                 </a>
                             </li>
-                           
+
                         }
                     </ul>
                 </div>

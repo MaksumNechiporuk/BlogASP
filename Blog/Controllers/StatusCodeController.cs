@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -17,6 +18,7 @@ namespace Blog.Controllers
         }
         // GET: /<controller>/
         [HttpGet("/StatusCode/{statusCode}")]
+        [AllowAnonymous]
         public IActionResult Index(int statusCode)
         {
             var reExecute = HttpContext.Features.Get<IStatusCodeReExecuteFeature>();
