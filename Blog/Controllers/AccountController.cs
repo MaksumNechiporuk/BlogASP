@@ -20,8 +20,8 @@ namespace Blog.Controllers
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
-
         }
+
         [AllowAnonymous]
         [HttpGet]
         public IActionResult Register()
@@ -39,6 +39,10 @@ namespace Blog.Controllers
                 var result = await userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
+                    if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                    {
+                        return RedirectToAction("ListUsers", "Administrator");
+                    }
                     await signInManager.SignInAsync(user, isPersistent: false);
                     return RedirectToAction("Blog", "Blog");
                 }
@@ -50,6 +54,7 @@ namespace Blog.Controllers
             }
             return View(model);
         }
+
         [HttpPost]
         [AllowAnonymous]
         public async Task<IActionResult> Logout()
@@ -64,6 +69,7 @@ namespace Blog.Controllers
         {
             return View();
         }
+
         [HttpPost]
         [AllowAnonymous]
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl)
@@ -90,6 +96,13 @@ namespace Blog.Controllers
             }
 
             return View(model);
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
 }

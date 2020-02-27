@@ -47,7 +47,6 @@
                         <li class="nav-item">
                             <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link " asp-area="" asp-controller="Home" asp-action="ABOUT">About us</a>
                         </li>
@@ -57,12 +56,33 @@
                         <li class="nav-item">
                             <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Discounts">Discounts</a>
                         </li>
-
+                        @if (SignInManager.IsSignedIn(User) && User.IsInRole("Moderator"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="CreatePost">AdminPanel</a>
+                            </li>
+                        }
+                        @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Manage
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Administrator"
+                                       asp-action="ListUsers">Users</a>
+                                    <a class="dropdown-item" asp-controller="Administrator"
+                                       asp-action="ListRoles">Roles</a>
+                                </div>
+                            </li>
+                        }
                         @if (SignInManager.IsSignedIn(User))
                         {
                             <li class="nav-item">
-                                <a class="nav-link " asp-area="" asp-controller="Admin" asp-action="CreatePost">Admin panel</a>
+                                <a class="nav-link" asp-area="" asp-controller="Profile" asp-action="Show">Profile</a>
                             </li>
+                     
                             <li class="nav-item">
                                 <form method="post" asp-controller="Account" asp-action="logout">
                                     <button type="submit" style="width:auto"
@@ -82,13 +102,11 @@
                                     Login
                                 </a>
                             </li>
-
                         }
                     </ul>
                 </div>
             </div>
         </nav>
-
         <div class="banner">
             <div class="container">
                 <div class="banner-text">

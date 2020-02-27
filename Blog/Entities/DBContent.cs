@@ -14,6 +14,10 @@ namespace Blog.Entities
         {
 
         }
+        public DBContent()
+        {
+
+        }
         public DbSet<BlogModel> Blog { get; set; }
 
     }

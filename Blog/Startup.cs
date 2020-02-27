@@ -27,12 +27,9 @@ namespace Blog
         public Startup(IConfiguration configuration, IHostingEnvironment ENV)
         {
             _dbConf = new ConfigurationBuilder().SetBasePath(ENV.ContentRootPath).AddJsonFile("settings.json").Build();
-
             Configuration = configuration;
         }
-
         public IConfiguration Configuration { get; }
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(  IServiceCollection services)
         {

@@ -1,0 +1,73 @@
+2020-02-27 11:01:35.8754|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRBBE3HH1N", Request id "0HLTRBBE3HH1N:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:14:40.8168|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.6-servicing-10079 initialized 'DBContent' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-02-27 11:15:01.8428|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.6-servicing-10079 initialized 'DBContent' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-02-27 11:15:03.9509|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2020-02-27 11:15:03.9509|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2020-02-27 11:15:03.9639|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2020-02-27 11:15:03.9639|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20200227091440_add img'.
+2020-02-27 11:15:04.0013|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [AspNetUsers] ADD [Img] nvarchar(max) NULL;
+2020-02-27 11:15:04.0013|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20200227091440_add img', N'2.2.6-servicing-10079');
+2020-02-27 11:26:13.4690|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRCS91IIPU", Request id "0HLTRCS91IIPU:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:26:17.5084|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRCS91IIPU", Request id "0HLTRCS91IIPU:00000002": An unhandled exception was thrown by the application.
+2020-02-27 11:26:22.5639|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRCS91IIPU", Request id "0HLTRCS91IIPU:00000003": An unhandled exception was thrown by the application.
+2020-02-27 11:26:38.2118|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRCSIGVL7U", Request id "0HLTRCSIGVL7U:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:27:33.9656|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRCT37C6JS", Request id "0HLTRCT37C6JS:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:27:36.1160|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRCT37C6JS", Request id "0HLTRCT37C6JS:00000002": An unhandled exception was thrown by the application.
+2020-02-27 11:28:01.7524|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRCT37C6JS", Request id "0HLTRCT37C6JS:00000006": An unhandled exception was thrown by the application.
+2020-02-27 11:33:12.8817|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD0868GPK", Request id "0HLTRD0868GPK:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:33:13.2907|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD0868GPJ", Request id "0HLTRD0868GPJ:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:33:14.5132|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD0868GPJ", Request id "0HLTRD0868GPJ:00000002": An unhandled exception was thrown by the application.
+2020-02-27 11:33:15.8782|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD0868GPJ", Request id "0HLTRD0868GPJ:00000003": An unhandled exception was thrown by the application.
+2020-02-27 11:34:00.3486|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD0868GPJ", Request id "0HLTRD0868GPJ:00000004": An unhandled exception was thrown by the application.
+2020-02-27 11:34:09.0752|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD0OTG3MN", Request id "0HLTRD0OTG3MN:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:34:10.4231|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD0OTG3MN", Request id "0HLTRD0OTG3MN:00000002": An unhandled exception was thrown by the application.
+2020-02-27 11:36:51.3170|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD296ER22", Request id "0HLTRD296ER22:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:38:45.0778|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD3B40H6E", Request id "0HLTRD3B40H6E:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:39:02.5444|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD3G5JDS8", Request id "0HLTRD3G5JDS8:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:40:41.7637|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD4E0336F", Request id "0HLTRD4E0336F:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:42:40.5385|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD5HCLOAS", Request id "0HLTRD5HCLOAS:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:42:42.7077|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD5HCLOAS", Request id "0HLTRD5HCLOAS:00000002": An unhandled exception was thrown by the application.
+2020-02-27 11:48:10.0307|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD8IU6DNL", Request id "0HLTRD8IU6DNL:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:48:49.8404|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD8VF2OIT", Request id "0HLTRD8VF2OIT:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:48:52.5632|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD8VF2OIT", Request id "0HLTRD8VF2OIT:00000002": An unhandled exception was thrown by the application.
+2020-02-27 11:48:53.2938|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD8VF2OIT", Request id "0HLTRD8VF2OIT:00000003": An unhandled exception was thrown by the application.
+2020-02-27 11:48:53.9244|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD8VF2OIT", Request id "0HLTRD8VF2OIT:00000004": An unhandled exception was thrown by the application.
+2020-02-27 11:48:54.3772|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD8VF2OIT", Request id "0HLTRD8VF2OIT:00000005": An unhandled exception was thrown by the application.
+2020-02-27 11:48:54.7117|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD8VF2OIT", Request id "0HLTRD8VF2OIT:00000006": An unhandled exception was thrown by the application.
+2020-02-27 11:48:55.0153|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD8VF2OIT", Request id "0HLTRD8VF2OIT:00000007": An unhandled exception was thrown by the application.
+2020-02-27 11:48:55.3505|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD8VF2OIT", Request id "0HLTRD8VF2OIT:00000008": An unhandled exception was thrown by the application.
+2020-02-27 11:49:19.6426|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD98BBTHI", Request id "0HLTRD98BBTHI:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:50:30.8287|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD9T6B6BC", Request id "0HLTRD9T6B6BC:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:51:06.2238|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRD9T6B6BC", Request id "0HLTRD9T6B6BC:00000002": An unhandled exception was thrown by the application.
+2020-02-27 11:51:53.2686|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRDAM4GLSM", Request id "0HLTRDAM4GLSM:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:52:39.7739|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRDB25RQL2", Request id "0HLTRDB25RQL2:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:52:48.2709|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRDB25RQL2", Request id "0HLTRDB25RQL2:00000002": An unhandled exception was thrown by the application.
+2020-02-27 11:53:19.3702|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRDBAFIQ0T", Request id "0HLTRDBAFIQ0T:00000001": An unhandled exception was thrown by the application.
+2020-02-27 11:54:23.9257|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRDC1UIN7I", Request id "0HLTRDC1UIN7I:00000001": An unhandled exception was thrown by the application.
+2020-02-27 20:19:09.7546|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRM5MP93GG", Request id "0HLTRM5MP93GG:00000004": An unhandled exception was thrown by the application.
+2020-02-27 20:25:55.0982|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRM9DMNBFO", Request id "0HLTRM9DMNBFO:00000002": An unhandled exception was thrown by the application.
+2020-02-27 20:28:01.8480|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRMAPCNR43", Request id "0HLTRMAPCNR43:00000002": An unhandled exception was thrown by the application.
+2020-02-27 20:32:24.7068|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRMD7P208I", Request id "0HLTRMD7P208I:00000002": An unhandled exception was thrown by the application.
+2020-02-27 20:34:59.5790|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRMEP1FUS1", Request id "0HLTRMEP1FUS1:00000002": An unhandled exception was thrown by the application.
+2020-02-27 20:51:35.0839|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRMNM1B3NL", Request id "0HLTRMNM1B3NL:00000007": An unhandled exception was thrown by the application.
+2020-02-27 20:52:13.3368|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRMNM1B3NL", Request id "0HLTRMNM1B3NL:0000000D": An unhandled exception was thrown by the application.
+2020-02-27 20:52:53.2511|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRMORUV507", Request id "0HLTRMORUV507:00000002": An unhandled exception was thrown by the application.
+2020-02-27 20:59:30.8071|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRMRVJILHU", Request id "0HLTRMRVJILHU:00000003": An unhandled exception was thrown by the application.
+2020-02-27 21:00:15.7186|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRMSU9VEG2", Request id "0HLTRMSU9VEG2:00000002": An unhandled exception was thrown by the application.
+2020-02-27 21:01:45.8142|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRMTMQ871J", Request id "0HLTRMTMQ871J:00000002": An unhandled exception was thrown by the application.
+2020-02-27 21:03:14.7494|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRMUIN22OP", Request id "0HLTRMUIN22OP:00000002": An unhandled exception was thrown by the application.
+2020-02-27 21:07:04.0543|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRN0H8VFSO", Request id "0HLTRN0H8VFSO:00000004": An unhandled exception was thrown by the application.
+2020-02-27 21:10:09.6308|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /img/264b1d31-2bf3-41a5-97f7-41ac805152b3_How-to-Write-a-Definition-Essay.jpg
+2020-02-27 21:10:55.7364|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /img/
+2020-02-27 21:11:02.0935|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /img/
+2020-02-27 21:20:55.8626|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRN7ADHV18", Request id "0HLTRN7ADHV18:00000006": An unhandled exception was thrown by the application.
+2020-02-27 21:21:47.0417|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRN7ADHV18", Request id "0HLTRN7ADHV18:00000007": An unhandled exception was thrown by the application.
+2020-02-27 21:28:55.4964|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLTRNA7BP4UI", Request id "0HLTRNA7BP4UI:0000000E": An unhandled exception was thrown by the application.

@@ -1,0 +1,15 @@
+2020-02-25 10:05:17.1304|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /administration/CreateRole
+2020-02-25 10:05:28.0653|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /administration/CreateRole
+2020-02-25 10:06:23.7049|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administration/CreateRole
+2020-02-25 10:06:28.4933|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administration/CreateRole
+2020-02-25 10:06:40.7927|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administration/CreateRole
+2020-02-25 10:08:00.7386|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Administration/CreateRole
+2020-02-25 10:13:43.2164|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user ecfe651e-7088-4132-910e-6ca9348907c1.
+2020-02-25 10:13:43.2838|WARN|Microsoft.AspNetCore.Identity.SignInManager|User ecfe651e-7088-4132-910e-6ca9348907c1 failed to provide the correct password.
+2020-02-25 10:13:54.9931|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Admin/Admin
+2020-02-25 10:13:58.7519|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Admin/Admin
+2020-02-25 10:14:00.2096|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Admin/Admin
+2020-02-25 10:14:02.7197|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Admin/Admin
+2020-02-25 10:14:26.9167|INFO|Blog.Controllers.HomeController|Unexpected Status Code: 404, OriginalPath: /Admin/Admin
+2020-02-25 10:17:38.4249|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user ecfe651e-7088-4132-910e-6ca9348907c1.
+2020-02-25 10:17:38.4249|WARN|Microsoft.AspNetCore.Identity.SignInManager|User ecfe651e-7088-4132-910e-6ca9348907c1 failed to provide the correct password.

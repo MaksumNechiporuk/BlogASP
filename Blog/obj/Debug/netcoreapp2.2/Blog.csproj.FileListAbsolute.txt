@@ -43,3 +43,9 @@ D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Account\Log
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Administrator\CreateRole.g.cshtml.cs
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Administrator\EditRole.g.cshtml.cs
 D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Administrator\ListRoles.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Administrator\EditUsersInRole.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Account\AccessDenied.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Administrator\EditUser.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Administrator\ListUsers.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Profile\Edit.g.cshtml.cs
+D:\Study\ASP .NET Core\Blog\Blog\obj\Debug\netcoreapp2.2\Razor\Views\Profile\Show.g.cshtml.cs
