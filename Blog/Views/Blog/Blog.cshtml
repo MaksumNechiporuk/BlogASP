@@ -1,34 +1,30 @@
 ﻿
+@model PostSearchViewModel
 @inject SignInManager<AppUser> SignInManager
 <div class="container">
     <br />
     <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8">
-            <form @*asp-controller="Blog" asp-action="Blog" *@ enctype="multipart/form-data" class="card card-sm mt-3" method="post">
-                <div class="card-body row no-gutters align-items-center">
-                    <div class="col-auto">
-                        <i class="fas fa-search h4 text-body"></i>
+            <form  method="post">
+                <div class="row form-group">
+                    <div class="col-md-7">
+                        <input asp-for="@Model.Text" class="form-control" id="TextSearchInput"  placeholder="Enter text for full text search and press Enter">
                     </div>
-                    <div class="col">
-                        <input name="Name" class="form-control form-control-lg form-control-borderless"
-                               type="text"
-                               placeholder="Search topics or keywords" />
-                        <span class="text-danger"></span>
-                    </div>
-                    <div class="col-auto">
-                        <button class="btn btn-lg btn-success search" type="submit">
-                            Search
-                        </button>
+                    <div class="col-md-5">
+                        <button type="submit" id="ApllyTextSearchButton" class="btn btn-success">Search</button>
+                        <a asp-action="Blog" class="btn btn-secondary text-reset">Clear</a>
                     </div>
                 </div>
             </form>
+
+
         </div>
     </div>
 </div>
 <div class="container">
     <div class=" Posts row">
 
-        @foreach (var item in Model)
+        @foreach (var item in Model.Blog)
         {
             <div class="col-lg-4 col-md-6">
                 <div class="single-blog">

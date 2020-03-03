@@ -1,5 +1,6 @@
 ﻿using Blog.Entities;
 using Blog.Interfaces;
+using Korzh.EasyQuery.Linq;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -45,17 +46,22 @@ namespace Blog.Repository
             list.Reverse();
             return list;
         }
-
+        public IQueryable<BlogModel> GetAllIQPosts()
+        {
+            var list = context.Blog;
+            list.Reverse();
+            return list;
+        }
         public BlogModel GetPostById(int id)
         {
             return context.Blog.Find(id);
 
         }
 
-        public List<BlogModel> GetPostByName(string Name)
+        public IQueryable<BlogModel> GetPostByName(string Name)
         {
-          var list=  context.Blog.Where(item => item.Name.Contains(Name) ).ToList();
-            return list;
+          var list=  context.Blog.FullTextSearchQuery(Name);
+          return list;
 
         }
 
@@ -65,6 +71,13 @@ namespace Blog.Repository
             post.State = EntityState.Modified;
             context.SaveChanges();
             return newPost;
+        }
+
+        List<BlogModel> IBlogRepository.GetAllPosts()
+        {
+            var list = context.Blog.ToList();
+            list.Reverse();
+            return list;
         }
     }
 }

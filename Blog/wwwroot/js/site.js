@@ -3,7 +3,7 @@
 
 // Write your JavaScript code.
 $(document).on("scroll", function () {
-    if ($(document).scrollTop() > 86) {
+    if ($(document).scrollTop() > 50) {
         $("#banner").addClass("shrink");
     } else {
         $("#banner").removeClass("shrink");
@@ -25,20 +25,24 @@ $(".dropdown-toggle").on("click", function () {
                 });
 });
 
-$(".search").on("click", function () {   
-        //const URL = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=93395f34a1bd41ea945fea1ef380ff4c`;
-        //await fetch(URL, {
-        //    method: "GET"
-        //})
-        //    .then(response => {
-        //        return response.json();
-        //    })
-        //    .then(data => {
-        //        callback(data);
-        //        console.log(URL);
-        //    })
-        //    .catch(err => {
-        //        console.log("Catch => ", err);
-        //    });
+//$(".search").on("click", function () {   
+//    const url = 'http://localhost:5000/Blog/Blog';
+//    const data = { Name: $(".searchText").value };
+
+//    try {
+//        const response = await fetch(url, {
+//            method: 'GET', 
+//            body: JSON.stringify(data), 
+//            headers: {
+//                'Content-Type': 'application/json'
+//            }
+//        });
+//        const json = await response.json();
+//        console.log('Успех:', JSON.stringify(json));
+//    } catch (error) {
+//        console.error('Ошибка:', error);
+//    }
+
+
+
     
-});

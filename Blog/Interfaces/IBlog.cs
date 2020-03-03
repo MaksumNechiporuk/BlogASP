@@ -9,11 +9,12 @@ namespace Blog.Interfaces
     public interface IBlogRepository
     {
         BlogModel GetPostById(int id);
-        IEnumerable<BlogModel> GetAllPosts();
+        List<BlogModel> GetAllPosts();
         BlogModel CreatePost(BlogModel post);
         BlogModel UpdatePost(BlogModel newPost);
         BlogModel DeletePost(int Id);
-        List<BlogModel> GetPostByName(string Name);
+        IQueryable<BlogModel> GetPostByName(string Name);
+        IQueryable<BlogModel> GetAllIQPosts();
 
     }
 }

@@ -16,6 +16,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Blog.Controllers
 {
+    [Produces("application/json")]
     public class BlogController : Controller
     {
         private readonly IBlogRepository _postRepository;
@@ -52,19 +53,28 @@ namespace Blog.Controllers
         {
             ViewBag.Message = "Form submitted.";
 
-            ViewBag.Title = "Blog";          
-            return View(_postRepository.GetAllPosts());
+            ViewBag.Title = "Blog";
+            PostSearchViewModel post = new PostSearchViewModel()
+            {
+                Blog = _postRepository.GetAllIQPosts(),
+                Text = ""
+            };
+            return View(post);
         }
         [HttpPost]
         [AllowAnonymous]
         public IActionResult Blog(PostSearchViewModel post)
         {
-            ViewBag.Title = "Blog";
-            var list = _postRepository.GetPostByName(post.Name);
-            if(list.Count>0)
-            return View(list);
+            if(!string.IsNullOrEmpty(post.Text))
+            {
+                post.Blog = _postRepository.GetPostByName(post.Text);
+            }
             else
-            return new StatusCodeResult(404);
+            {
+                post.Blog = _postRepository.GetAllIQPosts();
+            }
+            return View(post);
+           
         }
         public IActionResult Delete(int id)
         {
