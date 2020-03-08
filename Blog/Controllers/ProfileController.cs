@@ -115,6 +115,9 @@ namespace Blog.Controllers
 
                 if (result.Succeeded)
                 {
+                    await signInManager.SignOutAsync();
+                    var resultSignIn = await signInManager.PasswordSignInAsync(
+                                       user.Email, user.Password, false, false);
                     return RedirectToAction("Show");
                 }
 
@@ -122,8 +125,9 @@ namespace Blog.Controllers
                 {
                     ModelState.AddModelError("", error.Description);
                 }
-
+              
                 return View(user);
+          
             }
             return View(user);
 
